@@ -16,7 +16,7 @@ object SpecialMath {
     args(0).toInt
   }
 
-  def doMath(arg: Integer): Integer = {
+  def doMath(arg: Integer): Long = {
     // <= 0 to avoid StackOverflowExceptions when a negative int is passed
     if (arg <= 0) {
       return 0
