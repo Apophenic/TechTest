@@ -24,6 +24,10 @@ class SpecialMathTest extends FlatSpec with Matchers {
     SpecialMath.doMath(0) should be (0)
   }
 
+  it should "return 0 if the input arg is negative" in {
+    SpecialMath.doMath(-8765309) should be (0)
+  }
+
   it should "return 1 if the input arg is 1" in {
     SpecialMath.doMath(1) should be (1)
   }
