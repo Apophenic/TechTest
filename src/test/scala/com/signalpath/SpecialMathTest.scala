@@ -34,7 +34,7 @@ class SpecialMathTest extends FlatSpec with Matchers {
 
   it should "throw a NumberFormatException when a non-numeric string is passed as an arg" in {
     a [NumberFormatException] should be thrownBy {
-      SpecialMath.parse(Array[String]("banana_pancakes"))
+      SpecialMath.parseArg(Array[String]("banana_pancakes"))
     }
   }
 }

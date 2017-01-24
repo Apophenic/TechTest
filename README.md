@@ -31,12 +31,7 @@ sbt "run-main com.signalpath.HexToBase64 ${arg}"
 ```
 sbt "run-main com.signalpath.SpecialMath ${arg}"
 ```
-As for the case of calculating SpecialMath 90... That's TBD pending on how long it takes my machine to run 
-the calculation. One of two things should happen in theory: 1) It will work and be a silly large number
-or 2) It will exceed Long.MAX_VALUE, causing an overflow, and wrap around to Long.MIN_VALUE.
-A StackOverflow exception here would also make sense (given the amount of recursion required), 
-but my java process seems to be humming 
-along happily still nearly 2 hours in.
+SpecialMath 90 -> 1293530146158671458
 
 ## Tests
 ```
